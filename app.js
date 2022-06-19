@@ -11,7 +11,7 @@ app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static("public"))
 
-mongoose.connect(process.env.DB_STRING, {dbName: 'todolistDBToday'}, { 
+mongoose.connect(process.env.DATABASE_URL, {dbName: 'todolistDBToday'}, { 
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false
