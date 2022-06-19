@@ -7,9 +7,6 @@ const _ = require('lodash')
 const PORT = 3000
 require('dotenv').config()
 
-
-
-
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static("public"))
@@ -132,8 +129,6 @@ app.post('/', (req, res) => {
   }
 
 })
-
-
  
 app.get("/about", function(req, res){
   res.render('about');
