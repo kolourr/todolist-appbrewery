@@ -11,7 +11,7 @@ app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(express.static("public"))
 
-mongoose.connect(process.env.DATABASE_URL, {dbName: 'todolistDBToday'}, { 
+mongoose.connect('mongodb+srv://bruce:1Ufi2Cck3DaYqMcB@cluster0.cru7r.mongodb.net/?retryWrites=true&w=majority', {dbName: 'todolistDBToday'}, { 
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false
